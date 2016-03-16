@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sovnem.draganimlayout.DragLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                      android:layout_width="match_parent"
+                                      android:layout_height="match_parent"
+                                      android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+
+        >
+        <ListView
+            android:layout_width="match_parent"
+            android:id="@+id/listview"
+            android:background="#efefef"
+            android:layout_height="match_parent"></ListView>
+
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/holo_green_dark"
+        >
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="wrap_content"
+            android:text="我就是哈哈"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"/>
+
+    </FrameLayout>
+
+</com.sovnem.draganimlayout.DragLayout>
