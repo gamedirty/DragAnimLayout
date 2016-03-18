@@ -16,15 +16,6 @@
             </intent-filter>
         </activity>
         <!-- This service is only used on devices with API v17+ -->
-        <service
-            android:name=".MyDaydreamService"
-            android:exported="true" >
-            <intent-filter>
-                <action android:name="android.service.dreams.DreamService" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </service>
     </application>
 
 </manifest>
