@@ -1,7 +1,8 @@
 package com.sovnem.draganimlayout;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
@@ -19,10 +20,11 @@ public class MainActivity extends AppCompatActivity {
     private void initView() {
         ListView lv = (ListView) findViewById(R.id.listview);
         ArrayList<String> data = new ArrayList<>();
-        for (int i = 0;i<30;i++){
-            data.add("我就是哈哈"+i);
+        for (int i = 0; i < 30; i++) {
+            data.add("我就是哈哈" + i);
         }
-        ArrayAdapter adapter = new ArrayAdapter(this,android.R.layout.simple_list_item_1,data);
+        ArrayAdapter adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, data);
         lv.setAdapter(adapter);
+        Log.i("info", "我是更改");
     }
 }
